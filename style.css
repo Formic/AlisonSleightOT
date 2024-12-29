@@ -1,0 +1,154 @@
+body {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  background: linear-gradient(rgb(81 0 149 / 95%), rgb(0 178 180 / 95%)), url("./images/headerBackground.png");
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.header-content {
+  margin: 1.5em 0 0 2vw;
+  align-self: flex-start;
+}
+
+.header-content {
+  color: white;
+}
+
+.header-content .name {
+  margin: 0px;
+  font-size: min(max(2.5vw, 1.5em), 2.5em);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header-content .title {
+  width: 100%;
+  font-size: min(max(2.5vw, 1em), 2em);
+}
+
+.header-content .subtitle {
+  width: 100%;
+  font-size: min(max(2vw, 0.5em), 1.5em);
+  padding-top: 15px;
+  display: inline-block;
+}
+
+.header-content .location {
+  margin-top: 8px;
+  display: inline-block;
+  font-size: min(max(1.75vw, 0.25em), 1.25em);
+}
+
+header img {
+  border-radius: 20%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: 2vw;
+  max-width: 27vw;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.value-proposition {
+  text-align: center;
+  font-size: 2em;
+}
+
+.value-proposition p {
+  padding: 0 200px;
+}
+
+h2 {
+  color: rgb(81 0 149 / 95%);
+  font-size: min(max(2vw, 2.5em), 1.5em);
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+section {
+  padding: 10px 50px 30px 50px;
+}
+
+.secondary-row {
+  background-color: #deddf1;
+}
+
+.float-clear {
+  clear: both;
+}
+
+.text-columns {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+.heart {
+  background-image: url("./images/icons/heart.png");
+}
+
+.dinner {
+  background-image: url("./images/icons/dinner.png");
+}
+.senses {
+  list-style-image: url("./images/icons/senses.png");
+}
+
+.skill-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.icon {
+  background-size: 50px;
+}
+
+.skill-list li {
+  font-size: 1.5em;
+  
+  font-size: min(max(1vw, 1.5em), 1.1em);
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 60px; /* Adjust based on icon size */
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 85px;
+}
+
+@media only screen and (max-width: 750px) {
+  .skill-list li {
+    width: 100%;
+    float: none;
+    height: 100%;
+    margin-bottom: 30px;
+    min-height: 50px;
+  }  
+}
